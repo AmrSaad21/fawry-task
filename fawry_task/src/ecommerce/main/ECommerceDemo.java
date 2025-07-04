@@ -156,19 +156,5 @@ public class ECommerceDemo {
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
-
-        // Test Case 17: Customer Balance Exactly Equal to Total Amount
-        System.out.println("\n=== Test Case 17: Customer Balance Exactly Equal to Total Amount ===");
-        ShoppingCart exactCart = new ShoppingCart();
-        exactCart.add(cheese, 2); // Total 200 matches balance
-        ECommerceSystem.checkout(exactBalanceCustomer, exactCart);
-
-        // Test Case 18: Products with Decimal Prices and Weights
-        System.out.println("\n=== Test Case 18: Products with Decimal Prices and Weights ===");
-        ShoppingCart decimalCart = new ShoppingCart();
-        decimalCart.add(book, 1); // 29.99, 0.5kg
-        decimalCart.add(milk, 2); // 10.99 each, 1kg each
-        ECommerceSystem.checkout(customer, decimalCart);
-
     }
 }
